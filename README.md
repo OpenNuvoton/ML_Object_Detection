@@ -1,11 +1,22 @@
-# ML_tf2_object_detection_nu
+# tf2_object_detection_nu
 - This Tool help you train your object-detection model and convert to tflite-model which is easy to deploy on your device.
 - The training framework is using Tensorflow object detection API on Tensoflow-2 & Tensorflow-1.
 - The notebooks help you simplify the complicated installation steps and easy to use data preparing, training and converting. 
 ## First step
+#### 1. Install anaconda
 - Download the [anaconda](https://www.anaconda.com/products/distribution) and install it. (If you are familiar with python env creating, you can skip this step)
-- `git clone --recurse-submodules https://github.com/OpenNuvoton/ML_tf2_object_detection_nu.git`
-- Use `setup_objdet_tf2_env.ipynb` in `ML_tf2_object_detection_nu/` to create the object-detection python running environment.
+#### 2. Install the Visual C++ 2015 build tools
+- Login https://my.visualstudio.com/Downloads （You will need a free Microsoft account）
+- Enter `Build Tools` in search.
+- Choose the left side `Visual Studio 2015 Update 3`.
+- Choose `DVD` at `Visual C++ Build Tools . . .` and click download.
+- Execute the install steps.
+<img src="https://user-images.githubusercontent.com/105192502/209085872-18dadffb-aa0d-4c07-9780-f2a1237b2211.png" width="60%">
+
+#### 3. Download this git folder 
+- `git clone --recurse-submodules https://github.com/MaxCYCHEN/tf2_object_detection_nu.git`
+#### 4. Python env create
+- Use `setup_objdet_tf2_env.ipynb` in `tf2_object_detection_nu/` to create the object-detection python running environment.
 ---
 ## Work Flow
 <img src="https://user-images.githubusercontent.com/105192502/203241236-e6c729f4-8087-439c-9b0d-0fffbf602c71.png" width="80%">
