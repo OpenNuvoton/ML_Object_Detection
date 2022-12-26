@@ -13,9 +13,12 @@
 - Execute the install steps.
 <img src="https://user-images.githubusercontent.com/105192502/209085872-18dadffb-aa0d-4c07-9780-f2a1237b2211.png" width="60%">
 
-#### 3. Download this git folder 
-- `git clone --recurse-submodules https://github.com/OpenNuvoton/ML_tf2_object_detection_nu.git`
-#### 4. Python env create
+#### 3. Install [git windows version](https://gitforwindows.org/)
+- Git is needed at the 5th step. 
+#### 4. Download this git folder 
+- `git clone https://github.com/OpenNuvoton/ML_tf2_object_detection_nu.git`
+- Or you can download the zip file directly
+#### 5. Python env create
 - Use `setup_objdet_tf2_env.ipynb` in `ML_tf2_object_detection_nu/` to create the object-detection python running environment.
 ---
 ## Work Flow
