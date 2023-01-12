@@ -34,7 +34,7 @@ def cocoapi_setup():
     print("== COCOAPI Installation step ==")
     print("================================")        
     
-    env_variable_VS(FLAGS.folder_path)
+    #env_variable_VS(FLAGS.folder_path)
     install_cocoAPI()
 
 if __name__ == '__main__':
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--folder_path',
         type=str,
-        default='C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC',
+        default=r'C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC',
         help='The install location of Microsoft Visual Studio 14.0 which is used for env variable.')
     parser.add_argument(
         '--url',

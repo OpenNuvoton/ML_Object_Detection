@@ -45,6 +45,7 @@ def zip_extract(url, dir_path):
         print('The file is not a ZIP.')
 
 def env_variable_protobuf(dir_path):
+    dir_path = os.path.join(dir_path, 'bin')
     setenv("path", value=dir_path, append=True, user=False)
         
 def compile_protobuf():
@@ -72,7 +73,7 @@ def Protobuf_setup():
     create_folder(FLAGS.folder_path)
     download(FLAGS.url, FLAGS.folder_path)
     zip_extract(FLAGS.url, FLAGS.folder_path)
-    env_variable_protobuf(FLAGS.folder_path)
+    #env_variable_protobuf(FLAGS.folder_path)
     compile_protobuf()
 
 if __name__ == '__main__':
@@ -80,7 +81,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--folder_path',
         type=str,
-        default='C:\Program Files\Google Protobuf',
+        default=r'C:\Program Files\Google Protobuf',
         help='The create folder name & path env variable value.')
     parser.add_argument(
         '--url',
