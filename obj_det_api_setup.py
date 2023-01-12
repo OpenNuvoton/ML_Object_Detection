@@ -49,6 +49,22 @@ def obj_det_api_setup():
     if FLAGS.fix_protobuf_builder:
         fix_protobuf()
 
+def fix_proto_missing():
+    fix_path = os.path.join(os.path.abspath(object_detection.__file__).split("__init__.py")[0], 'protos')
+    cwd = os.getcwd()
+    src_path = os.path.join(cwd, "models", "research", "object_detection", "protos")
+    
+    isExist = os.path.exists(fix_path)
+    if not isExist:
+        print("The protos folder is missing at here: {}".format(fix_path))
+        shutil.copytree(src_path, fix_path)
+        # add a __init__.py
+        f = open(os.path.join(fix_path, "__init__.py"), 'w')
+        f.close()
+        print("Copy from my ML_tf2_object_detection_nu, total files: {}".format(len(os.listdir(fix_path))))
+    else:
+        print("The protos folder is good.")        
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
