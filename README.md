@@ -20,25 +20,33 @@
 - Or you can download the zip file directly
 #### 5. Python env create
 - First use `create_conda_env_tf2.ipynb` to create the object-detection python running environment.
-- Second, close and reopen Anaconda. Use `setup_objdet_tf2.ipynb` to install the remaining packages 
+- Second, close and reopen Anaconda. Use `setup_objdet_tf2.ipynb` to install the remaining packages.
+- [ Tf1 object detection ]: We also offer a Tf1 object detection env create, and please check `create_conda_env_tf1.ipynb` & `setup_objdet_tf1.ipynb`.
 ---
 ## Work Flow
 <img src="https://user-images.githubusercontent.com/105192502/203241236-e6c729f4-8087-439c-9b0d-0fffbf602c71.png" width="80%">
 
 ## data prepare
-- Open `create_data.ipynb` in `image_dataset`. This should be excuted in tf2 env (Check `setup_objdet_tf2_env.ipynb` to create tf2 env).
+- Open `create_data.ipynb` in `image_dataset`. This should be excuted in tf2 env (Check `create_conda_env_tf2.ipynb` & `setup_objdet_tf2.ipynb` to create tf2 env).
 - This process will handle downloading open source images or labeling your customized images to create train dataset.
 - The tutorial is in this notebook.
 
-## train & model creating
+## train & tflite model creating
+- open `workspace` folder.
 - User need to choose tf1 or tf2 environment basing on user's training model.
 - This process will handle training, mAP evaluation and converting tflite.
 - The tutorial is in the notebook.
+
 ### tensorflow2
-- Open `train_cmd_tf2.ipynb` in `workspace`. This should be excuted in tf2 env.
+- `train_evl_monitor_tf2.ipynb` offers an easy UI to help user training, evaluation and monitoring.
+- `convert_tflite_tf2.ipynb` offers an easy UI to help user converting tflite
+
+[alternative way]:
+- Open `train_cmd_tf2.ipynb`. This should be excuted in tf2 env.
 - Google's object detection support models: [TensorFlow 2 Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) 
+
 ### tensorflow1
-- Open `train_cmd_tf1.ipynb` in `workspace`. This should be excuted in tf1 env (Check `setup_objdet_tf1_env.ipynb` to create tf1 env).
+- Open `train_cmd_tf1.ipynb`. This should be excuted in tf1 env (Check `create_conda_env_tf1.ipynb` & `setup_objdet_tf1.ipynb` to create tf1 env).
 - Google's object detection support models: [TensorFlow 1 Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md) 
 
 ## evaluation & test
