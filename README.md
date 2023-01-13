@@ -4,7 +4,7 @@
 - The notebooks help you simplify the complicated installation steps and easy to use data preparing, training and converting. 
 ## First step
 #### 1. Install anaconda
-- Download the [anaconda](https://www.anaconda.com/products/distribution) and install it. (If you are familiar with python env creating, you can skip this step)
+- Download the [anaconda](https://www.anaconda.com/products/distribution) and install it.
 #### 2. Install the Visual C++ 2015 build tools
 - Login https://my.visualstudio.com/Downloads （You will need a free Microsoft account）
 - Enter `Build Tools` in search.
@@ -19,7 +19,8 @@
 - `git clone https://github.com/OpenNuvoton/ML_tf2_object_detection_nu.git`
 - Or you can download the zip file directly
 #### 5. Python env create
-- Use `setup_objdet_tf2_env.ipynb` in `ML_tf2_object_detection_nu/` to create the object-detection python running environment.
+- First use `create_conda_env_tf2.ipynb` to create the object-detection python running environment.
+- Second, close and reopen Anaconda. Use `setup_objdet_tf2.ipynb` to install the remaining packages 
 ---
 ## Work Flow
 <img src="https://user-images.githubusercontent.com/105192502/203241236-e6c729f4-8087-439c-9b0d-0fffbf602c71.png" width="80%">
