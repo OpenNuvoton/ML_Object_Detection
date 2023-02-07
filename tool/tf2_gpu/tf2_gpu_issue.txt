@@ -1,0 +1,8 @@
+1. missing zlibwapi.dll
+Copy zlibwapi.dll to <CUDA_PATH> ==> ex: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin
+https://blog.csdn.net/qq_45071353/article/details/124091856
+
+2. error: Can't find libdevice directory ${CUDA_DIR}/nvvm/libdevice conda
+把nvvm資料夾複製到script同一層，例如ML_tf2_object_detection_nu\workspace\training_demo_person
+nvvm在cuda_dir底下 ==> ex: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\nvvm
+https://stackoverflow.com/questions/72499414/i-got-an-error-about-error-cant-find-libdevice-directory-cuda-dir-nvvm-libd
