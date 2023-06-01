@@ -4,7 +4,7 @@
 - The notebooks help you simplify the complicated installation steps and easy to use data preparing, training and converting. 
 ## 1. First step
 #### 1. Install virtual env  
-- If you havn't install [NuEdgeWise](https://github.com/MaxCYCHEN/NuEdgeWise), please follow the steps to install python virtual env.
+- If you havn't install [NuEdgeWise](https://github.com/OpenNuvoton/NuEdgeWise), please follow the steps to install python virtual env.
 - Skip if you have done.
 #### 2. Install the Visual C++ 2015 build tools
 - Login https://my.visualstudio.com/Downloads （You will need a free Microsoft account）
