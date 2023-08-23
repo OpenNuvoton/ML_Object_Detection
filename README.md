@@ -1,6 +1,6 @@
 # ML_Object_Detection
 - This tool assists you in training your object detection model and converting it to a TFLite model, which can be easily deployed on your device.
-- The training framework utilizes TensorFlow Object Detection API on TensorFlow 2 and TensorFlow 1.
+- The training framework utilizes [TensorFlow Object Detection API](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/) on TensorFlow 2 and TensorFlow 1.
 - The notebooks simplify the complicated installation steps and provide an easy-to-use approach for data preparation, training, and conversion.
 ## 1. First step
 #### 1. Install virtual env  
