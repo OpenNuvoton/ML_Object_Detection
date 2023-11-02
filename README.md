@@ -20,7 +20,7 @@
 - `git clone https://github.com/OpenNuvoton/ML_tf2_object_detection_nu.git`
 - Or you can download the zip file directly
 #### 5. Object Detection API installation
-- Open Anaconda with administrator privileges and select the `NuEdgeWise_env`. Utilize `setup_objdet_tf2.ipynb` to install the remaining packages.
+- Open Miniforge or your python environment with administrator privileges and select the `NuEdgeWise_env`. Utilize `setup_objdet_tf2.ipynb` to install the remaining packages.
 #### 6. TF1 Object Detection API installation (Optional)
 - If you wish to use ssd_mobileNetv3, TensorFlow 1 is required, so you need to create a new Python virtual environment not using `NuEdgeWise_env`.
 - First, refer to `create_conda_env_tf1.ipynb`, and then proceed to `setup_objdet_tf1.ipynb`.
