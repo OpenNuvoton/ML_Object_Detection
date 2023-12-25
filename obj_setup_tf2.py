@@ -147,12 +147,12 @@ def install_obj_det_api():
     print("Change back working directory: {0}".format(cwd))
 
 def check_fix_proto_missing():
-    import object_detection 
+    import object_detection
     fix_path = os.path.join(os.path.abspath(object_detection.__file__).split("__init__.py")[0], 'protos')
     cwd = os.getcwd()
     src_path = os.path.join(cwd, "models", "research", "object_detection", "protos")
-    
-    isExist = os.path.exists(fix_path)
+    # check if protos/any.py exist or not 
+    isExist = os.path.exists(os.path.join(fix_path, 'anchor_generator_pb2.py'))
     if not isExist:
         print("The protos folder is missing at here: {}".format(fix_path))
         shutil.copytree(src_path, fix_path)
