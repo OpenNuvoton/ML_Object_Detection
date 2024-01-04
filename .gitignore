@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 #tf2+object_detection_nu
+workspace/training_demo*
 models/research/object_detection/protos/*.py
 *.jpg
 *.record
